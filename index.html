@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://nfroidure.github.io/svgiconfont/ -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>SVG Icon Font: Build SVG fonts right in your browser!</title>
+  <meta name="description"
+    content="SVG Icon Font helps building and trying your icon font without relying on any server.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./src/screen.css">
+  <style>
+    @font-face {
+      font-family: "geniconsfont";
+      src: url("blob:http://nfroidure.github.io/ba056d10-10c8-43b6-a551-db08fd0dfb36");
+      src: url("blob:http://nfroidure.github.io/ba056d10-10c8-43b6-a551-db08fd0dfb36") format("embedded-opentype"),
+        url("blob:http://nfroidure.github.io/b4a71897-494d-49db-ae41-b23b66a81ddf") format("truetype"),
+        url("blob:http://nfroidure.github.io/564a6bc9-774b-4d72-827f-c9893e1f3b6e") format("woff"),
+        url("blob:http://nfroidure.github.io/d0443b11-f27d-42d8-a4a9-99cdd478c27f") format("woff2"),
+        url("blob:http://nfroidure.github.io/dd23abe2-bd49-4d5a-a374-e1ff49b44e28") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <!--[if lt IE 9]>
+            <script>document.location.href=http://browsehappy.com;</script>
+        <![endif]-->
+
+  <header>
+    <h1>SVG Icon Font</h1>
+    <p>
+      A full frontend icon font generator. To get your font, just add SVG
+      icons and download your ZIP file.
+    </p>
+  </header>
+
+  <main>
+    <section class="font">
+      <p class="font_save">
+        <a title="Save your font to disk" href="blob:http://nfroidure.github.io/7e4b4620-359f-4e02-83a1-8c6df24bd062"
+          download="geniconsfont.zip"><span>
+            Save
+          </span></a>
+      </p>
+      <h2 class="font_title">Preview</h2>
+      <p class="font_preview" style="
+	    font-family: geniconsfont;
+	    speak: none;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    line-height:7.2rem;
+	    font-size:6rem;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;"></p>
+    </section>
+    <section class="icons">
+      <p class="icons_add">
+        <a href="app:icons/add" title="Add icons to your font"><span>
+            Add
+          </span></a>
+        <input type="file" name="icons" multiple="multiple">
+      </p>
+      <h2 class="icons_title">SVG Icons</h2>
+      <ul class="icons_list">
+        <li><strong>link_expired.svg [ue001]</strong><a href="app:icons/delete?index=0" title="Remove this icon"><span>
+              Remove
+            </span></a></li>
+      </ul>
+    </section>
+    <section class="options">
+      <h2 class="options_title">Options</h2>
+      <form action="app:render">
+        <p>
+          <label>Name:
+            <input type="text" name="fontname" value="geniconsfont">
+          </label><br>
+          <label>Font height:
+            <input type="number" name="fontheight" min="0" value="150">
+          </label><br>
+          <label>Descent:
+            <input type="number" name="fontdescent" min="0" value="0">
+          </label><br>
+          <label>
+            <input type="checkbox" name="fontfixed"> Fixed width
+          </label><br>
+          <label>
+            <input type="checkbox" name="hcenter" checked="checked"> Center horizontally
+          </label><br>
+          <label>
+            <input type="checkbox" name="normalize" checked="checked"> Normalize icons
+          </label><br>
+          <input type="submit" value="Render">
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This is just a PoC to illustrate browserify use, i strongly
+      recommend you to use the
+      <a href="https://github.com/nfroidure/svgicons2svgfont#cli-interface">CLI interface</a>
+      or Gulp/Grunt plugins.
+    </p>
+    <p>
+      Shared with love by <a href="https://twitter.com/nfroidure">
+        @nfroidure</a>. <a href="https://github.com/nfroidure/svgiconfont">
+        Fork it on GitHub!</a>. MIT License.
+    </p>
+  </footer>
+  <script src="./src/script.js.download"></script>
+
+
+
+</body>
+
+</html>
